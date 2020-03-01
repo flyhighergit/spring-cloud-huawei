@@ -6,14 +6,18 @@ spring:
     name: canary-provider
   cloud:
     servicecomb:
+      swagger:
+        enableJavaChassisAdapter: true
       discovery:
         enabled: true
-        address: http://127.0.0.1:30100
+        address: https://cse.cn-north-4.myhuaweicloud.com
+        serviceName: canary-provider
+        appName: dhcc-example
         version: 0.0.1
         healthCheckInterval: 30
       credentials:
         enabled: true
-        accessKey: ak
-        secretKey: sk
-        project: cn-north-4
+        accessKey: BE1AYAXIXO1EHSQKQG8U
+        secretKey: YfaypJBG9o8nf3aoyBlgw1dDVOrQ4e9ecvDOmhXo
         akskCustomCipher: default
+        project: cn-north-4

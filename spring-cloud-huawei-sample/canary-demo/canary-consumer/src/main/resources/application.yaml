@@ -8,10 +8,18 @@ spring:
     servicecomb:
       discovery:
         enabled: true
-        address:  http://127.0.0.1:30100
+        address:  https://cse.cn-north-4.myhuaweicloud.com
+        appName: dhcc-example
+        serviceName: canary-consumer
         version: 0.0.2
         healthCheckInterval: 30
         autoDiscovery: true
+      credentials:
+        enabled: true
+        accessKey: BE1AYAXIXO1EHSQKQG8U
+        secretKey: YfaypJBG9o8nf3aoyBlgw1dDVOrQ4e9ecvDOmhXo
+        akskCustomCipher: default
+        project: cn-north-4
 
 servicecomb:
   routeRule:

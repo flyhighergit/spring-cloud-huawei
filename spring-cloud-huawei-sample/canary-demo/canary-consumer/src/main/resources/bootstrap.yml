@@ -4,12 +4,12 @@ spring:
   cloud:
     servicecomb:
       config:
-        serverAddr:  http://127.0.0.1:30103
+        serverAddr:  https://cse.cn-north-4.myhuaweicloud.com
         watch:
           delay: 10000
-      credentials:
+    credentials:
         enabled: true
-        accessKey: ak
-        secretKey: sk
-        project: cn-north-4
+        accessKey: BE1AYAXIXO1EHSQKQG8U
+        secretKey: YfaypJBG9o8nf3aoyBlgw1dDVOrQ4e9ecvDOmhXo
         akskCustomCipher: default
+        project: cn-north-4
